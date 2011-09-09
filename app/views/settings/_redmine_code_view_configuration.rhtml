@@ -1,7 +1,7 @@
 <div class="tabular settings">
 	<p>
 		<label><%= l(:label_default_code_view)%></label> 
-		<%= select_tag("settings[default_code_view]", options_for_select([['View', 'entry'], ['History', 'changes'], ['Annotate', 'annotate'] ], @settings['default_code_view'])) %>
+		<%= select_tag("settings[default_code_view]", options_for_select([[l(:button_view), 'entry'], [l(:label_history), 'changes'], [l(:button_annotate), 'annotate'] ], @settings['default_code_view'])) %>
 		<br />
 	</p>
 </div>
